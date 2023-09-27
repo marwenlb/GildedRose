@@ -8,7 +8,7 @@ class GildedRoseTest {
   @Test
   @DisplayName("Test that the name is unchanged")
   void testName() {
-    Item element = new Item("foo", 0, 0);
+    Item element = new Item("FIXME", 0, 0);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
     assertEquals("FIXME", element.name, "the name changed");
