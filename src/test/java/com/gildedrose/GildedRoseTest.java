@@ -13,5 +13,16 @@ class GildedRoseTest {
     app.updateQuality();
     assertEquals("FIXME", element.name, "the name changed");
   }
+  
+      @Test
+      @DisplayName("Test the updateQuality method for a normal item")
+    public void testUpdateQualityNormalItem() {
+    Item element = new Item("Normal item", 9, 15);
+    GildedRose app = new GildedRose(new Item[] {element});
+        app.updateQuality();
+        assertEquals(14, element.quality);
+        assertEquals(8, element.sellIn);
+    }
+
 
 }
