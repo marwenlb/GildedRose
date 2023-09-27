@@ -23,6 +23,17 @@ class GildedRoseTest {
         assertEquals(14, element.quality);
         assertEquals(8, element.sellIn);
     }
+          @Test
+      @DisplayName("Test the updateQuality method for a Sulfuras item")
+    public void testUpdateQualitySulfuras() {
+    Item element = new Item("Sulfuras, Hand of Ragnaros", 0, 80);
+    GildedRose app = new GildedRose(new Item[] {element});
+        app.updateQuality();
+        assertEquals(80, element.quality);
+        assertEquals(0, element.sellIn);
+    }
 
+
+    
 
 }
