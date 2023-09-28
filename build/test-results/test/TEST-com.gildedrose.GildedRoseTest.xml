@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-09-27T19:52:01" hostname="DESKTOP-B8PJ0VP" time="0.035">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-09-28T18:20:14" hostname="DESKTOP-B8PJ0VP" time="0.054">
   <properties/>
-  <testcase name="Test that the name is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.029"/>
-  <testcase name="Test the updateQuality method for a normal item" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Test the updateQuality method for a Sulfuras item" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that the name is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.044"/>
+  <testcase name="Test the updateQuality method for Backstage Passes with 15 days left" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test the updateQuality method for a normal item" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="Test the updateQuality method for a Sulfuras item" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

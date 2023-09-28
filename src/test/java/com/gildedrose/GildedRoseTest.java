@@ -32,8 +32,15 @@ class GildedRoseTest {
         assertEquals(80, element.quality);
         assertEquals(0, element.sellIn);
     }
-
-
+    @DisplayName("Test the updateQuality method for Backstage Passes with 15 days left")
+    @Test
+    public void testBackstagePassesUpdateQuality15Days() {
+        Item element = new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20);
+        GildedRose app = new GildedRose(new Item[] {element});
+        app.updateQuality();
+        assertEquals(14, element.sellIn);
+        assertEquals(21, element.quality);
+    }
     
 
 }
