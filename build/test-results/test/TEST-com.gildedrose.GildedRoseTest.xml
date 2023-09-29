@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-09-28T18:41:02" hostname="DESKTOP-B8PJ0VP" time="0.041">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-09-29T11:38:40" hostname="DESKTOP-B8PJ0VP" time="0.067">
   <properties/>
-  <testcase name="Test that the name is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.03"/>
-  <testcase name="Test the updateQuality method for Backstage Passes with 10 days left" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="Test that the name is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.048"/>
+  <testcase name="Test the updateQuality method for Backstage Passes with 10 days left" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test the updateQuality method for Backstage Passes with 15 days left" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test the updateQuality method for a normal item" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Test the updateQuality method for a Sulfuras item" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="Test the updateQuality method for a Sulfuras item" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="testBackstagePassesUpdateQuality5Days()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test the updateQuality method for Conjured Mana Cake" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
