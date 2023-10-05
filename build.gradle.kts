@@ -4,19 +4,33 @@ plugins {
     checkstyle
     pmd
     id("com.github.spotbugs") version "5.0.12"
+    id("info.solidsoft.pitest") version "1.9.0"
 }
+
+
+
+
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    testImplementation("org.hamcrest:hamcrest:2.2")
     testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
+    testImplementation("org.pitest:pitest-junit5-plugin:1.2.0")
+    
+}
+
+pitest {
+  targetClasses.set(listOf("com.gildedrose.*"))
+  threads.set(4)
+  outputFormats.set(listOf("HTML", "XML"))
+  timestampedReports.set(false)
 }
 
 tasks.test {
     useJUnitPlatform()
-    jvmArgs("--enable-preview")
     testLogging {
         showStandardStreams = true
         events("passed", "skipped", "failed")
@@ -27,7 +41,6 @@ tasks.withType<JavaCompile>() {
   options.encoding = "UTF-8"
   options.compilerArgs.add("-Xlint:all")
   options.compilerArgs.add("-Xlint:-serial")
-  options.compilerArgs.add("--enable-preview")
 }
 
 tasks.withType<Checkstyle>().configureEach {
