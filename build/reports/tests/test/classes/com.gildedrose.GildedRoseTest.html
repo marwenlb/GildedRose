@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">2</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.062s</div>
+<div class="counter">0.075s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">91%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,10 +61,52 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testMiseAJourQualiteObjetNormalSellinNegative()"></a>
+<h3 class="failures">Teste la mise à jour de la qualité pour un objet normal (qualité négative)</h3>
+<span class="code">
+<pre>org.opentest4j.AssertionFailedError: expected: &lt;0&gt; but was: &lt;-1&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:527)
+	at app//com.gildedrose.GildedRoseTest.testMiseAJourQualiteObjetNormalSellinNegative(GildedRoseTest.java:83)
+	at java.base@19.0.1/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base@19.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@19.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testUpdateQualityAgedBrieNegativeSellInQualityBelow50()"></a>
+<h3 class="failures">Test the updateQuality method for a Aged Brie negative sellin quality &lt;50</h3>
+<span class="code">
+<pre>org.opentest4j.AssertionFailedError: expected: &lt;26&gt; but was: &lt;25&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:527)
+	at app//com.gildedrose.GildedRoseTest.testUpdateQualityAgedBrieNegativeSellInQualityBelow50(GildedRoseTest.java:203)
+	at java.base@19.0.1/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base@19.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@19.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -90,7 +132,7 @@
 <tr>
 <td class="success">Test the updateQuality method for Backstage Passes with 11 days left</td>
 <td class="success">testBackstagePassesUpdateQuality11Days2()</td>
-<td class="success">0.001s</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -108,19 +150,19 @@
 <tr>
 <td class="success">Test the updateQuality method for Backstage Passes with 11 days left</td>
 <td class="success">testBackstagePassesUpdateQuality6Days()</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test the updateQuality method for Conjured Mana Cake with negative sellIn</td>
 <td class="success">testConjuredItemUpdateQualityNegativeSellIn()</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Teste la mise à jour de la qualité pour un objet normal (qualité maximale)</td>
 <td class="success">testMiseAJourQualiteObjetNormalQualiteMaximale()</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -142,10 +184,10 @@
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Teste la mise à jour de la qualité pour un objet normal (qualité négative)</td>
-<td class="success">testMiseAJourQualiteObjetNormalSellinNegative()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
+<td class="failures">Teste la mise à jour de la qualité pour un objet normal (qualité négative)</td>
+<td class="failures">testMiseAJourQualiteObjetNormalSellinNegative()</td>
+<td class="failures">0.002s</td>
+<td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">Test that the name is unchanged</td>
@@ -156,7 +198,7 @@
 <tr>
 <td class="success">testToString()</td>
 <td class="success">testToString()</td>
-<td class="success">0.011s</td>
+<td class="success">0.009s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -166,10 +208,10 @@
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Test the updateQuality method for a Aged Brie negative sellin quality &lt;50</td>
-<td class="success">testUpdateQualityAgedBrieNegativeSellInQualityBelow50()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
+<td class="failures">Test the updateQuality method for a Aged Brie negative sellin quality &lt;50</td>
+<td class="failures">testUpdateQualityAgedBrieNegativeSellInQualityBelow50()</td>
+<td class="failures">0.012s</td>
+<td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">Test the updateQuality method for a Backstage passes to a TAFKAL80ETC concert negative quality</td>
@@ -192,7 +234,7 @@
 <tr>
 <td class="success">Test the updateQuality method for a normal item</td>
 <td class="success">testUpdateQualityNormalItemegale0()</td>
-<td class="success">0.031s</td>
+<td class="success">0.032s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -229,7 +271,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.3</a> at 7 oct. 2023, 14:58:49</p>
+<a href="http://www.gradle.org">Gradle 8.3</a> at 11 oct. 2023, 22:15:24</p>
 </div>
 </div>
 </body>

@@ -1,29 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="24" skipped="0" failures="0" errors="0" timestamp="2023-10-07T12:58:49" hostname="DESKTOP-B8PJ0VP" time="0.083">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="24" skipped="0" failures="2" errors="0" timestamp="2023-10-11T20:15:24" hostname="DESKTOP-B8PJ0VP" time="0.101">
   <properties/>
-  <testcase name="Test the updateQuality method for a normal item" classname="com.gildedrose.GildedRoseTest" time="0.031"/>
+  <testcase name="Test the updateQuality method for a normal item" classname="com.gildedrose.GildedRoseTest" time="0.032"/>
   <testcase name="Teste la mise à jour de la qualité pour un objet normal (qualité négative)" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test the updateQuality method for Aged Brie with quality at its minimu 0" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Test the updateQuality method for a Aged Brie negative sellin quality &lt;50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test the updateQuality method for a Aged Brie negative sellin quality &lt;50" classname="com.gildedrose.GildedRoseTest" time="0.012">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;26&gt; but was: &lt;25&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;26&gt; but was: &lt;25&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:527)
+	at app//com.gildedrose.GildedRoseTest.testUpdateQualityAgedBrieNegativeSellInQualityBelow50(GildedRoseTest.java:203)
+	at java.base@19.0.1/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base@19.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@19.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
   <testcase name="Test that the name is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.003"/>
-  <testcase name="testToString()" classname="com.gildedrose.GildedRoseTest" time="0.011"/>
+  <testcase name="testToString()" classname="com.gildedrose.GildedRoseTest" time="0.009"/>
   <testcase name="Test the updateQuality method for a normal item egale 50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test the updateQuality method for a Backstage passes to a TAFKAL80ETC concert negative quality" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test the updateQuality method for Backstage Passes with 15 days left" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Teste la mise à jour de la qualité pour un objet normal (qualité négative et sellin égale zero)" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test the updateQuality method for a normal item" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test the updateQuality method for Aged Brie with quality at its maximum (50)" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Test the updateQuality method for Backstage Passes with 11 days left" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test the updateQuality method for Backstage Passes with 11 days left" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="Test the updateQuality method for a Backstage passes to a TAFKAL80ETC with sellin =5" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Teste la mise à jour de la qualité pour un objet normal (qualité = 0)" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="Test the updateQuality method for a Sulfuras item" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test the updateQuality method for Backstage Passes with 5 days left" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Test the updateQuality method for Backstage Passes with 11 days left" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="Test the updateQuality method for Backstage Passes with 11 days left" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test the updateQuality method for a Sulfuras, Hand of Ragnaros negative quality" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Teste la mise à jour de la qualité pour un objet normal (qualité négative)" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Teste la mise à jour de la qualité pour un objet normal (qualité négative)" classname="com.gildedrose.GildedRoseTest" time="0.002">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;0&gt; but was: &lt;-1&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;0&gt; but was: &lt;-1&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:527)
+	at app//com.gildedrose.GildedRoseTest.testMiseAJourQualiteObjetNormalSellinNegative(GildedRoseTest.java:83)
+	at java.base@19.0.1/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base@19.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@19.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
   <testcase name="Test the updateQuality method for a Sulfuras, Hand of Ragnaros negative quality" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Test the updateQuality method for Conjured Mana Cake with negative sellIn" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Teste la mise à jour de la qualité pour un objet normal (qualité maximale)" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="Test the updateQuality method for Conjured Mana Cake with negative sellIn" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="Teste la mise à jour de la qualité pour un objet normal (qualité maximale)" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test the updateQuality method for a Aged Brie negative sellin quality &gt;50" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
