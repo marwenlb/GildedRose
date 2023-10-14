@@ -339,8 +339,22 @@ class GildedRoseTest {
     }
     
     
-    
-    
+    @Test
+public void testConjuredQualityDecrease() {
+    Item element =  new Item("Conjured", 5, 10) ;
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertEquals(8, app.items[0].quality);
+}
+
+    @Test
+public void testConjuredQualityDecreasePastSellIn() {
+    Item element = new Item("Conjured", -1, 10) ;
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertEquals(6, app.items[0].quality);
+}
+
 
 }
 

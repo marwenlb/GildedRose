@@ -39,6 +39,15 @@ class GildedRose {
       case "Sulfuras, Hand of Ragnaros":
         // Pour "Sulfuras", la qualité et le sellIn ne changent pas, donc on ne fait rien.
         break;
+      case "Conjured":
+      // Pour "Conjured", la qualité diminue deux fois plus vite.
+      decreaseQuality(item);
+      decreaseQuality(item);
+      if (item.sellIn < 0) {
+        decreaseQuality(item);
+        decreaseQuality(item);
+      }
+      break;
 
       default:
         // Pour tous les autres éléments, la qualité diminue.
