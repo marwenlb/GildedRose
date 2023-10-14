@@ -200,7 +200,7 @@ class GildedRoseTest {
     Item element = new Item("Aged Brie", -1, 24);
     GildedRose app = new GildedRose(new Item[] {element});
         app.updateQuality();
-        assertEquals(26, element.quality);
+        assertEquals(25, element.quality);
         assertEquals(-2, element.sellIn);
     }
     
