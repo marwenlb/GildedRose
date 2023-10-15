@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">26</div>
+<div class="counter">29</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.067s</div>
+<div class="counter">0.078s</div>
 <p>duration</p>
 </div>
 </td>
@@ -84,13 +84,13 @@
 <tr>
 <td class="success">Test the updateQuality method for Aged Brie with quality at its minimu 0</td>
 <td class="success">testAgedBrieQualityAtMaximum000()</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test the updateQuality method for Backstage Passes with 11 days left</td>
 <td class="success">testBackstagePassesUpdateQuality11Days2()</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -114,37 +114,49 @@
 <tr>
 <td class="success">Test the updateQuality method for Conjured Mana Cake with negative sellIn</td>
 <td class="success">testConjuredItemUpdateQualityNegativeSellIn()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testConjuredQualityDecrease()</td>
+<td class="success">testConjuredQualityDecrease()</td>
 <td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testConjuredQualityDecrease()</td>
-<td class="success">testConjuredQualityDecrease()</td>
-<td class="success">0s</td>
+<td class="success">testConjuredQualityDecreasePastSellIn()</td>
+<td class="success">testConjuredQualityDecreasePastSellIn()</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testConjuredQualityDecreasePastSellIn()</td>
-<td class="success">testConjuredQualityDecreasePastSellIn()</td>
+<td class="success">testConjuredQualityDecreasePastSellIn2()</td>
+<td class="success">testConjuredQualityDecreasePastSellIn2()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testConjuredQualityDecreasePastSellIn22222()</td>
+<td class="success">testConjuredQualityDecreasePastSellIn22222()</td>
 <td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Teste la mise à jour de la qualité pour un objet normal (qualité maximale)</td>
 <td class="success">testMiseAJourQualiteObjetNormalQualiteMaximale()</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Teste la mise à jour de la qualité pour un objet normal (qualité négative)</td>
 <td class="success">testMiseAJourQualiteObjetNormalQualiteNegative()</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Teste la mise à jour de la qualité pour un objet normal (qualité négative et sellin égale zero)</td>
 <td class="success">testMiseAJourQualiteObjetNormalQualiteNegativeAndSellinEgaleZero()</td>
-<td class="success">0.002s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -156,7 +168,7 @@
 <tr>
 <td class="success">Teste la mise à jour de la qualité pour un objet normal (qualité négative)</td>
 <td class="success">testMiseAJourQualiteObjetNormalSellinNegative()</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -168,19 +180,19 @@
 <tr>
 <td class="success">testToString()</td>
 <td class="success">testToString()</td>
-<td class="success">0.013s</td>
+<td class="success">0.011s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test the updateQuality method for a Aged Brie negative sellin quality &gt;50</td>
 <td class="success">testUpdateQualityAgedBrieNegativeSellInQualityAbove50()</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test the updateQuality method for a Aged Brie negative sellin quality &lt;50</td>
 <td class="success">testUpdateQualityAgedBrieNegativeSellInQualityBelow50()</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -196,6 +208,12 @@
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="success">Test the updateQuality method for a Backstage passes to a TAFKAL80ETC concert negative quality</td>
+<td class="success">testUpdateQualityBackstagePassesNegativeQualityttyyyyyy2233333()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">Test the updateQuality method for a normal item</td>
 <td class="success">testUpdateQualityNormalItem()</td>
 <td class="success">0.001s</td>
@@ -204,7 +222,7 @@
 <tr>
 <td class="success">Test the updateQuality method for a normal item</td>
 <td class="success">testUpdateQualityNormalItemegale0()</td>
-<td class="success">0.030s</td>
+<td class="success">0.029s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -228,7 +246,7 @@
 <tr>
 <td class="success">Test the updateQuality method for a Sulfuras, Hand of Ragnaros negative quality</td>
 <td class="success">testUpdateQualitySulfurasNegativeQuality2()</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -241,7 +259,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.3</a> at 14 oct. 2023, 14:45:55</p>
+<a href="http://www.gradle.org">Gradle 8.3</a> at 15 oct. 2023, 20:43:29</p>
 </div>
 </div>
 </body>

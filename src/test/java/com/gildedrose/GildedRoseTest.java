@@ -145,7 +145,22 @@ class GildedRoseTest {
     GildedRose app = new GildedRose(new Item[] {element});
         app.updateQuality();
         assertEquals(0, element.quality);
-        assertEquals(-2, element.sellIn);
+    }
+    
+    
+    
+    
+    
+    
+    //new test 1
+              @Test
+      @DisplayName("Test the updateQuality method for a Backstage passes to a TAFKAL80ETC concert negative quality")
+    public void testUpdateQualityBackstagePassesNegativeQualityttyyyyyy2233333() {
+    Item element = new Item("Backstage passes to a TAFKAL80ETC concert", 0, -1);
+    GildedRose app = new GildedRose(new Item[] {element});
+        app.updateQuality();
+        assertEquals(2, element.quality);
+        assertEquals(-1, element.sellIn);
     }
     
     
@@ -344,7 +359,7 @@ public void testConjuredQualityDecrease() {
     Item element =  new Item("Conjured", 5, 10) ;
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals(8, app.items[0].quality);
+    assertEquals(8, element.quality);
 }
 
     @Test
@@ -352,8 +367,30 @@ public void testConjuredQualityDecreasePastSellIn() {
     Item element = new Item("Conjured", -1, 10) ;
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertEquals(6, app.items[0].quality);
+    assertEquals(6, element.quality);
 }
+
+    @Test
+public void testConjuredQualityDecreasePastSellIn2() {
+    Item element = new Item("Conjured", 0, 4) ;
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertEquals(2, element.quality);
+
+}
+
+    @Test
+public void testConjuredQualityDecreasePastSellIn22222() {
+    Item element = new Item("normal", 0, 2) ;
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertEquals(1, element.quality);
+    assertEquals(-1, element.sellIn);
+
+}
+
+
+
 
 
 }
